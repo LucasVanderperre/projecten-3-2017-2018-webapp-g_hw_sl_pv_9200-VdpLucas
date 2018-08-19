@@ -1,0 +1,14 @@
+<form [formGroup]='post' (ngSubmit)='onSubmit()' class="ui large form segment error">
+  <h3 class="ui header">Nieuw bericht</h3>
+  <div class="field">
+    <label for="titel">Titel:</label>
+    <input type="text" class="form-control" id="titel" formControlName="titel"/>  
+  </div>
+  <div class="field">
+    <label for="bericht">Bericht:</label>
+    <textarea class="form-control" formControlName="bericht"></textarea>
+  </div>
+  <button type='submit' class="ui positive right floated button">Toevoegen</button>
+  
+</form>
+<!-- REMOVE {{ recipe.value | json }} {{ recipe.valid }} -->

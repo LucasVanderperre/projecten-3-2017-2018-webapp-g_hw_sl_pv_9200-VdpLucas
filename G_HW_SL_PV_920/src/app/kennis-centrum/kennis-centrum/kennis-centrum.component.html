@@ -1,0 +1,12 @@
+<div class="col-8" *ngIf="moderator">
+<br>
+  <button class="float-left btn-success btn-lg"  [routerLink]="['/add']" routerLinkActive="active-current"><span class="glyphicon glyphicon-plus"></span> Nieuw bericht</button>
+<br>
+</div>
+<router-outlet></router-outlet>
+
+<div class="ui col-md-8" id='post-list' style="padding-left: 3%">
+  <app-post *ngFor="let localPost of posts" [post]="localPost" >
+  </app-post>
+</div>
+

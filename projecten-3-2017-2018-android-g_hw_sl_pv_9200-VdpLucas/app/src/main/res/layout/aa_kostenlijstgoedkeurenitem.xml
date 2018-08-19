@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/kostenDetailView">
+
+    <TextView
+        android:id="@+id/txtNaam"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitel"
+        android:layout_width="231dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/txtNaam"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtNaam"
+        app:layout_constraintTop_toBottomOf="@+id/txtNaam" />
+
+    <TextView
+        android:id="@+id/txtPrijs"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtNaam"
+        app:layout_constraintTop_toTopOf="@+id/txtNaam" />
+
+    <TextView
+        android:id="@+id/txtGoedgekeurd"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/txtPrijs"
+        app:layout_constraintStart_toStartOf="@+id/txtPrijs"
+        app:layout_constraintTop_toTopOf="@+id/txtTitel" />
+
+    <TextView
+        android:id="@+id/txtDatum"
+        android:layout_width="398dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:text="TextView"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/txtNaam"
+        app:layout_constraintEnd_toEndOf="@+id/txtPrijs" />
+</android.support.constraint.ConstraintLayout>
